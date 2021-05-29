@@ -11,4 +11,36 @@
     font-family: 'Pacifico', cursive;
     font-weight: 700;
   }
-}
+
+    &__card{
+      position: absolute;
+      bottom: -250px;
+      width: 470px;
+      padding: 80px 40px;
+      background: $green;
+      color: $black;
+      right: 0;
+
+      @include responsive(765px){
+        width: 300px;
+        bottom: -400px
+      }
+
+      &-h6{
+        font-size: 16px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+      }
+
+      &-h4{
+        font-size: 30px;
+        margin-bottom: 10px;
+        font-weight: 600;
+      }
+      &-text{
+        font-size: 15px;
+        letter-spacing: 1px;
+      }
+    }
+  }
